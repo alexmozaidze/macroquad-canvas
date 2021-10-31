@@ -6,7 +6,7 @@ const HEIGHT: i32 = 600;
 
 fn win_config() -> Conf {
     Conf {
-        window_title: "MacroPong".to_string(),
+        window_title: "Basic usage".to_string(),
         window_width: WIDTH,
         window_height: HEIGHT,
         window_resizable: true,

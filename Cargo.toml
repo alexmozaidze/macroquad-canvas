@@ -1,6 +1,6 @@
 [package]
 name = "macroquad-canvas-2d"
-version = "0.1.2"
+version = "0.1.3"
 authors = ["nicolas <nicolas.sabbatini.95@gmail.com>"]
 edition = "2021"
 license = "Apache-2.0"
