@@ -29,6 +29,9 @@ impl Canvas2D {
         let canvas = render_target(width as u32, height as u32);
         let mut camera = Camera2D::from_display_rect(Rect::new(0.0, 0.0, width, height));
         camera.render_target = Some(canvas);
+        // Temp fix or maybe I am doing something wrong 
+        // https://github.com/not-fl3/macroquad/issues/171#issuecomment-880601087
+        camera.zoom.y = -camera.zoom.y;
         Canvas2D {
             canvas,
             camera,
@@ -50,22 +53,14 @@ impl Canvas2D {
         target_width: f32,
         target_height: f32,
     ) -> (f32, f32, Vec2) {
-        // Calculate scale factors
-        let scale_factor_w: f32 = target_width / self.width;
-        let scale_factor_h: f32 = target_height / self.height;
 
-        // Get the min scale factor
-        let min_scale_factor: f32 = f32::min(scale_factor_w, scale_factor_h);
-
-        // Calculate windows new size
-        let new_width: f32 = self.width * min_scale_factor;
-        let new_height: f32 = self.height * min_scale_factor;
+        let new_size: Vec2 = self.calculate_size(target_width, target_height); 
 
         // Calculate padding
-        let left_padding: f32 = (target_width - new_width) / 2.0;
-        let top_padding: f32 = (target_height - new_height) / 2.0;
+        let left_padding: f32 = (target_width - new_size.x) / 2.0;
+        let top_padding: f32 = (target_height - new_size.y) / 2.0;
 
-        (left_padding, top_padding, Vec2::new(new_width, new_height))
+        (left_padding, top_padding, new_size)
     }
 
     /// Calculate size of the canvas so it can fit inside of the target
