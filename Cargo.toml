@@ -1,9 +1,9 @@
 [package]
 name = "macroquad-canvas"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["alexmozaidze <alexman2622@gmail.com>", "nicolas <nicolas.sabbatini.95@gmail.com>"]
 edition = "2021"
-license-file = "LICENSE"
+license = "Apache-2.0"
 readme = "README.md"
 description = "Adds canvas functionality to macroquad."
 repository = "https://github.com/alexmozaidze/macroquad-canvas"
