@@ -216,7 +216,7 @@ impl Canvas2D {
     /// # Example
     ///
     /// ```rust
-    /// canvas.draw(screen_width(), screen_height());
+    /// canvas.draw(800, 600);
     /// ```
     pub fn draw(
         &self,
