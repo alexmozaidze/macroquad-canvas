@@ -169,7 +169,7 @@ impl Canvas2D {
     ///
     /// ```rust
     /// let (left_padding, top_padding, dimensions) =
-    ///     self.calculate_size_and_padding(screen_width(), screen_height());
+    ///     canvas.calculate_size_and_padding(screen_width(), screen_height());
     /// ```
     pub fn calculate_size_and_padding(
         &self,
