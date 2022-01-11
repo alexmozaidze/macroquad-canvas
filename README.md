@@ -32,11 +32,11 @@ and here's how to draw the canvas
 loop {
     set_camera(&canvas.camera);
 
-    // draw inside canvas...
+    // Draw inside canvas...
 
     set_default_camera();
 
-    canvas.draw(screen_width(), screen_height());
+    canvas.draw_default();
 
     next_frame().await
 }

@@ -240,4 +240,14 @@ impl Canvas2D {
             },
         );
     }
+
+    /// Draws canvas according to the screen.
+    ///
+    /// It's basically an alias to
+    /// ```rust
+    /// canvas.draw(screen_width(), screen_height());
+    /// ```
+    pub fn draw_default(&self) {
+        self.draw(screen_width(), screen_height());
+    }
 }
