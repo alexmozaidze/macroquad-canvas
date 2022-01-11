@@ -32,11 +32,11 @@ and here's how to draw the canvas
 loop {
     set_camera(&canvas.camera);
 
-    // draw things inside canvas...
+    // draw inside canvas...
 
     set_default_camera();
 
-    canvas.draw(None);
+    canvas.draw(screen_width(), screen_height());
 
     next_frame().await
 }
@@ -49,7 +49,7 @@ That's all you need to know to get started! For more examples check out the
 
 *Sorted in order of execution*
 
-◻ Function to transform canvas coordinates to screen coordinates.  
-◻ Simple post processing effects.  
-◻ Shaders.  
-◻ Add more examples.
+[ ] Function to transform canvas coordinates to screen coordinates.  
+[ ] Simple post processing effects.  
+[ ] Shaders.  
+[ ] Add more examples.

@@ -50,7 +50,7 @@ async fn main() {
         clear_background(BLACK);
 
         // Drawing the canvas on the screen
-        canvas.draw(None);
+        canvas.draw(screen_width(), screen_height());
 
         next_frame().await
     }

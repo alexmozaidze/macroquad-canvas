@@ -189,12 +189,6 @@ impl Canvas2D {
     }
 
     /// Calculate size of the canvas so it can fit inside of the target.
-    ///
-    /// # Example
-    ///
-    /// ```rust
-    /// canvas.calculate_size(screen_width(), screen_height());
-    /// ```
     pub fn calculate_size(
         &self,
         target_width: impl Into<f32>,
@@ -217,27 +211,20 @@ impl Canvas2D {
         Vec2::new(new_width, new_height)
     }
 
-    /// Draws canvas in the center of the screen.
+    /// Draws canvas with target width/height.
     ///
     /// # Example
     ///
-    /// Draw canvas according to the window:
-    ///
     /// ```rust
-    /// canvas.draw(None);
-    /// ```
-    ///
-    /// Draw canvas with custom target dimensions:
-    ///
-    /// ```rust
-    /// canvas.draw((800.0, 600.0));
+    /// canvas.draw(screen_width(), screen_height());
     /// ```
     pub fn draw(
         &self,
-        target_dim: impl Into<Option<(f32, f32)>>,
+        target_width: impl Into<f32>,
+        target_height: impl Into<f32>,
     ) {
-        let (target_width, target_height) =
-            target_dim.into().unwrap_or((screen_width(), screen_height()));
+        let target_width = target_width.into();
+        let target_height = target_height.into();
 
         let (left_padding, top_padding, dimensions) =
             self.calculate_size_and_padding(target_width, target_height);
