@@ -96,6 +96,7 @@ use std::ops::{Deref, DerefMut};
 /// There's a bug that mirrors render target on the Y axis (see
 /// <https://github.com/not-fl3/macroquad/issues/171#issuecomment-880601087>), as a workaround,
 /// the render target gets flipped vertically.
+#[derive(Clone, Copy, Default)]
 pub struct Canvas2D {
     /// Contains the camera which contains the render texture and other things.
     pub camera: Camera2D,
