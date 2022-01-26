@@ -1,20 +1,14 @@
+/*
+ * This example shows basic usage of the canvas
+ */
+
 use macroquad::prelude::*;
 use macroquad_canvas::Canvas2D;
 
 const WIDTH: f32 = 800_f32;
 const HEIGHT: f32 = 600_f32;
 
-fn win_config() -> Conf {
-    Conf {
-        window_title: "Basic usage".to_owned(),
-        window_width: WIDTH as i32,
-        window_height: HEIGHT as i32,
-        window_resizable: true,
-        ..Default::default()
-    }
-}
-
-#[macroquad::main(win_config)]
+#[macroquad::main("Basic usage")]
 async fn main() {
     // Creating the canvas
     let canvas = Canvas2D::new(WIDTH, HEIGHT);
@@ -50,7 +44,7 @@ async fn main() {
         clear_background(BLACK);
 
         // Drawing the canvas on the screen
-        canvas.draw_default();
+        canvas.draw();
 
         next_frame().await
     }

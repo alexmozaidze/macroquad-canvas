@@ -1,6 +1,6 @@
 [package]
 name = "macroquad-canvas"
-version = "0.2.1"
+version = "0.3.0"
 authors = ["alexmozaidze <alexman2622@gmail.com>", "nicolas <nicolas.sabbatini.95@gmail.com>"]
 edition = "2021"
 license = "Apache-2.0"
@@ -17,3 +17,7 @@ macroquad = "0.3"
 [[example]]
 name = "basic"
 path = "examples/basic.rs"
+
+[[example]]
+name = "mouse"
+path = "examples/mouse.rs"

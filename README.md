@@ -21,9 +21,7 @@ use macroquad_canvas::Canvas2D;
 Then simply create the canvas and you're good to go!
 
 ```rust
-let width = 800;
-let height = 600;
-let canvas = Canvas2D::new(width, height);
+let canvas = Canvas2D::new(800_f32, 600_f32);
 ```
 
 and here's how to draw the canvas
@@ -36,7 +34,7 @@ loop {
 
     set_default_camera();
 
-    canvas.draw_default();
+    canvas.draw();
 
     next_frame().await
 }
@@ -44,12 +42,3 @@ loop {
 
 That's all you need to know to get started! For more examples check out the
 [examples](https://github.com/alexmozaidze/macroquad-canvas/tree/main/examples) folder.
-
-# TODO
-
-*Sorted in order of execution*
-
-[ ] Function to transform canvas coordinates to screen coordinates.  
-[ ] Simple post processing effects.  
-[ ] Shaders.  
-[ ] Add more examples.
