@@ -1,3 +1,9 @@
+[![Crates.io](https://img.shields.io/crates/v/macroquad-canvas?style=flat)](https://crates.io/crates/macroquad-canvas)
+[![Lib.rs](https://img.shields.io/crates/v/macroquad-canvas?color=%2384f&label=lib.rs)](https://lib.rs/crates/macroquad-canvas)
+[![docs.rs](https://img.shields.io/docsrs/macroquad-canvas?style=flat)](https://docs.rs/macroquad-canvas/0.2.1/macroquad_canvas/)
+[![Crates.io License](https://img.shields.io/crates/l/macroquad-canvas)](https://github.com/alexmozaidze/macroquad-canvas/blob/main/LICENSE)
+![Maintenance](https://img.shields.io/maintenance/yes/2022)
+
 # Notice
 
 This is a hard fork of the original
