@@ -20,27 +20,19 @@ fixed resolution. If you're making a pixel game, then this library is for you!
 
 **macroquad-canvas** is easy to use and setup, the only thing you'll need to import is `Canvas2D`.
 
-```rust,no_run
+```rust
 use macroquad_canvas::Canvas2D;
 ```
 
 Then simply create the canvas and you're good to go!
 
-```rust,no_run
-# use macroquad_canvas::Canvas2D;
+```rust
 let canvas = Canvas2D::new(800_f32, 600_f32);
 ```
 
 and here's how to draw the canvas
 
-```rust,no_run
-# #![no_main]
-# use macroquad::prelude::*;
-# use macroquad_canvas::Canvas2D;
-#
-# #[macroquad::main("Basic usage")]
-# async fn main() {
-# let canvas = Canvas2D::new(800_f32, 600_f32);
+```rust
 loop {
     set_camera(&canvas.camera);
 
@@ -50,10 +42,8 @@ loop {
 
     canvas.draw();
 
-    # return;
     next_frame().await
 }
-# }
 ```
 
 That's all you need to know to get started! For more examples check out the

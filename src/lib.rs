@@ -1,4 +1,3 @@
-#![doc = include_str!("../README.md")]
 #![forbid(unsafe_code)]
 #![warn(
     // restriction lints
@@ -70,6 +69,45 @@
     clippy::missing_errors_doc,
     clippy::missing_panics_doc,
 )]
+
+//! [![Crates.io](https://img.shields.io/crates/v/macroquad-canvas?style=flat)](https://crates.io/crates/macroquad-canvas)
+//! [![Lib.rs](https://img.shields.io/crates/v/macroquad-canvas?color=%2384f&label=lib.rs)](https://lib.rs/crates/macroquad-canvas)
+//! [![docs.rs](https://img.shields.io/docsrs/macroquad-canvas?style=flat)](https://docs.rs/macroquad-canvas/0.2.1/macroquad_canvas/)
+//! [![Crates.io License](https://img.shields.io/crates/l/macroquad-canvas)](https://github.com/alexmozaidze/macroquad-canvas/blob/main/LICENSE)
+//! ![Maintenance](https://img.shields.io/maintenance/yes/2022)
+//!
+//! # Description
+//!
+//! **macroquad-canvas** is a simple resolution-handling library for
+//! [Macroquad](https://github.com/not-fl3/macroquad) that allows you to focus on making your games
+//! with fixed resolution.
+//!
+//! # Usage
+//!
+//! ```rust,no_run
+//! use macroquad::prelude::*;
+//! use macroquad_canvas::Canvas2D;
+//!
+//! #[macroquad::main("Title")]
+//! async fn main() {
+//!     let canvas = Canvas2D::new(800_f32, 600_f32);
+//!
+//!     loop {
+//!         set_camera(&canvas.camera);
+//!
+//!         // Draw inside canvas...
+//!
+//!         set_default_camera();
+//!
+//!         canvas.draw();
+//!
+//!         next_frame().await
+//!     }
+//! }
+//! ```
+//!
+//! for more examples check out the
+//! [examples](https://github.com/alexmozaidze/macroquad-canvas/tree/main/examples) folder
 
 //---------------------------------------------------------------------
 
