@@ -90,7 +90,9 @@ use std::ops::{Deref, DerefMut};
 /// `Deref` and `DerefMut` traits are implemented; this means you can access camera's fields and
 /// methods directly from canvas like so:
 ///
-/// ```rust
+/// ```rust,no_run
+/// # use macroquad_canvas::Canvas2D;
+/// # let canvas = Canvas2D::new(800_f32, 600_f32);
 /// // These lines do the same thing
 /// println!("{}", canvas.zoom);
 /// println!("{}", canvas.camera.zoom);
