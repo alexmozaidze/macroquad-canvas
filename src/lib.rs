@@ -1,4 +1,5 @@
 #![forbid(unsafe_code)]
+// TODO: Strip out unnecessary lints
 #![warn(
     // restriction lints
     clippy::clone_on_ref_ptr,
@@ -163,6 +164,7 @@ impl DerefMut for Canvas2D {
 
 impl Canvas2D {
     /// Creates a new canvas.
+    // TODO: Change input types to `u32`
     pub fn new(width: f32, height: f32) -> Self {
         let mut camera = Camera2D::from_display_rect(Rect::new(0.0, 0.0, width, height));
         camera.render_target = Some(render_target(width as u32, height as u32));
