@@ -6,21 +6,18 @@
 
 # Macroquad Canvas
 
-# Notice
+*This is a hard fork of the original
+[macroquad-canvas-2d](https://git.sr.ht/~nik_codes/macroquad-canvas)*
 
-This is a hard fork of the original
-[macroquad-canvas-2d](https://git.sr.ht/~nik_codes/macroquad-canvas); the only thing that I didn't
-touch is the math involving aligning the canvas, everything else was changed.
-
-## Description
-
-**macroquad-canvas** is a simple resolution-handling library for
+A simple resolution-handling library for
 [Macroquad](https://github.com/not-fl3/macroquad) that allows you to focus on making your games with
-fixed resolution. If you're making a pixel game, then this library is for you!
+fixed resolution.
 
-# How To Use
+If you're making a pixel game, then this library is for you!
 
-**macroquad-canvas** is easy to use and setup, the only thing you'll need to import is `Canvas2D`.
+## How To Use
+
+To use this library, import `Canvas2D`
 
 ```rust
 use macroquad_canvas::Canvas2D;
@@ -48,5 +45,6 @@ loop {
 }
 ```
 
-That's all you need to know to get started! For more examples, check out the
+That's all you need to know to get started!  
+For more examples, check out the
 [examples](https://github.com/alexmozaidze/macroquad-canvas/tree/main/examples) folder.
