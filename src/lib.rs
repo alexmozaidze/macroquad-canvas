@@ -70,7 +70,11 @@ impl DerefMut for Canvas2D {
 
 impl Canvas2D {
     /// Creates a new canvas.
-    // TODO: Change input types to `u32`
+    ///
+    /// # Why does it take floats instead of integers?
+    ///
+    /// The reason it takes floats and not integers is because
+    /// Macroquad uses floats in (almost) all of its functions.
     pub fn new(width: f32, height: f32) -> Self {
         let mut camera = Camera2D::from_display_rect(Rect::new(0.0, 0.0, width, height));
         camera.render_target = Some(render_target(width as u32, height as u32));
