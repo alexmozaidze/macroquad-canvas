@@ -1,114 +1,20 @@
 #![forbid(unsafe_code)]
-// TODO: Strip out unnecessary lints
 #![warn(
-    // restriction lints
-    clippy::clone_on_ref_ptr,
-    clippy::create_dir,
-    clippy::exit,
-    clippy::filetype_is_file,
-    clippy::fn_to_numeric_cast_any,
-    clippy::get_unwrap,
+    clippy::cargo_common_metadata,
+    clippy::cloned_instead_of_copied,
+    clippy::equatable_if_let,
     clippy::if_then_some_else_none,
     clippy::lossy_float_literal,
-    clippy::multiple_inherent_impl,
-    clippy::same_name_method,
-    clippy::rc_buffer,
-    clippy::rc_mutex,
-    clippy::rest_pat_in_fully_bound_structs,
-    clippy::unneeded_field_pattern,
-    clippy::str_to_string,
-    clippy::string_to_string,
-    clippy::undocumented_unsafe_blocks,
-    clippy::unnecessary_self_imports,
-    clippy::unseparated_literal_suffix,
-
-    // nursery lints
-    clippy::debug_assert_with_mut_call,
-    clippy::equatable_if_let,
-    clippy::fallible_impl_from,
-    clippy::option_if_let_else,
-    clippy::path_buf_push_overwrite,
-    clippy::use_self,
-
-    // pedantic lints
-    clippy::cloned_instead_of_copied,
-    clippy::filter_map_next,
-    clippy::if_not_else,
-    clippy::from_iter_instead_of_collect,
-    clippy::implicit_clone,
-    clippy::inefficient_to_string,
-    clippy::large_digit_groups,
-    clippy::large_stack_arrays,
-    clippy::large_types_passed_by_value,
-    clippy::let_unit_value,
-    clippy::macro_use_imports,
-    clippy::manual_assert,
-    clippy::manual_ok_or,
     clippy::map_unwrap_or,
-    clippy::match_bool,
-    clippy::mut_mut,
-    clippy::needless_bitwise_bool,
-    clippy::needless_pass_by_value,
-    clippy::option_option,
-    clippy::ptr_as_ptr,
-    clippy::redundant_closure_for_method_calls,
-    clippy::semicolon_if_nothing_returned,
-    clippy::string_add_assign,
-    clippy::trait_duplication_in_bounds,
-    clippy::type_repetition_in_bounds,
-    clippy::unicode_not_nfc,
-    clippy::unnested_or_patterns,
-    clippy::unreadable_literal,
-    clippy::unused_self,
-    clippy::unused_async,
-    clippy::used_underscore_binding,
-    clippy::verbose_bit_mask,
 
-    // other
     missing_docs,
+    clippy::doc_link_with_quotes,
     clippy::doc_markdown,
     clippy::missing_errors_doc,
     clippy::missing_panics_doc,
 )]
 
-//! [![Crates.io](https://img.shields.io/crates/v/macroquad-canvas?style=flat)](https://crates.io/crates/macroquad-canvas)
-//! [![Lib.rs](https://img.shields.io/crates/v/macroquad-canvas?color=%2384f&label=lib.rs)](https://lib.rs/crates/macroquad-canvas)
-//! [![docs.rs](https://img.shields.io/docsrs/macroquad-canvas?style=flat)](https://docs.rs/macroquad-canvas/0.2.1/macroquad_canvas/)
-//! [![Crates.io License](https://img.shields.io/crates/l/macroquad-canvas)](https://github.com/alexmozaidze/macroquad-canvas/blob/main/LICENSE)
-//! ![Maintenance](https://img.shields.io/maintenance/yes/2022)
-//!
-//! # Description
-//!
-//! **macroquad-canvas** is a simple resolution-handling library for
-//! [Macroquad](https://github.com/not-fl3/macroquad) that allows you to focus on making your games
-//! with fixed resolution.
-//!
-//! # Usage
-//!
-//! ```rust,no_run
-//! use macroquad::prelude::*;
-//! use macroquad_canvas::Canvas2D;
-//!
-//! #[macroquad::main("Title")]
-//! async fn main() {
-//!     let canvas = Canvas2D::new(800_f32, 600_f32);
-//!
-//!     loop {
-//!         set_camera(&canvas.camera);
-//!
-//!         // Draw inside canvas...
-//!
-//!         set_default_camera();
-//!
-//!         canvas.draw();
-//!
-//!         next_frame().await
-//!     }
-//! }
-//! ```
-//!
-//! for more examples check out the
-//! [examples](https://github.com/alexmozaidze/macroquad-canvas/tree/main/examples) folder
+#![doc = include_str!("../README.md")]
 
 //---------------------------------------------------------------------
 
