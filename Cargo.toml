@@ -1,12 +1,12 @@
 [package]
 name = "macroquad-canvas"
-version = "0.3.1"
+version = "0.3.2"
 authors = ["alexmozaidze <alexman2622@gmail.com>", "nicolas <nicolas.sabbatini.95@gmail.com>"]
 edition = "2021"
 license = "Apache-2.0"
 readme = "README.md"
 description = "Adds canvas functionality to macroquad."
-repository = "https://github.com/alexmozaidze/macroquad-canvas"
+repository = "https://gitlab.com/alexmozaidze/macroquad-canvas"
 keywords = ["macroquad"]
 categories = ["game-development"]
 exclude = ["examples"]
