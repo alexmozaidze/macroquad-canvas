@@ -1,7 +1,7 @@
 [![Crates.io](https://img.shields.io/crates/v/macroquad-canvas?style=flat)](https://crates.io/crates/macroquad-canvas)
 [![Lib.rs](https://img.shields.io/crates/v/macroquad-canvas?color=%2384f&label=lib.rs)](https://lib.rs/crates/macroquad-canvas)
-[![docs.rs](https://img.shields.io/docsrs/macroquad-canvas?style=flat)](https://docs.rs/macroquad-canvas/0.3.0/macroquad_canvas/)
-[![Crates.io License](https://img.shields.io/crates/l/macroquad-canvas)](https://github.com/alexmozaidze/macroquad-canvas/blob/main/LICENSE)
+[![docs.rs](https://img.shields.io/docsrs/macroquad-canvas?style=flat)](https://docs.rs/macroquad-canvas/0.3.2/macroquad_canvas/)
+[![License](https://img.shields.io/crates/l/macroquad-canvas)](https://gitlab.com/alexmozaidze/macroquad-canvas/-/blob/main/LICENSE)
 ![Maintenance](https://img.shields.io/maintenance/yes/2023)
 
 # Macroquad Canvas
@@ -47,4 +47,4 @@ loop {
 
 That's all you need to know to get started!  
 For more examples, check out the
-[examples](https://github.com/alexmozaidze/macroquad-canvas/tree/main/examples) folder.
+[examples](https://gitlab.com/alexmozaidze/macroquad-canvas/-/tree/main/examples) folder.
