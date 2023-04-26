@@ -47,4 +47,4 @@ loop {
 
 That's all you need to know to get started!  
 For more examples, check out the
-[examples](https://gitlab.com/alexmozaidze/macroquad-canvas/-/tree/main/examples) folder.
+[examples folder](https://gitlab.com/alexmozaidze/macroquad-canvas/-/tree/main/examples).
