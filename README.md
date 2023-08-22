@@ -2,7 +2,6 @@
 [![Lib.rs](https://img.shields.io/crates/v/macroquad-canvas?color=%2384f&label=lib.rs)](https://lib.rs/crates/macroquad-canvas)
 [![docs.rs](https://img.shields.io/docsrs/macroquad-canvas?style=flat)](https://docs.rs/macroquad-canvas/0.3.2/macroquad_canvas/)
 [![License](https://img.shields.io/crates/l/macroquad-canvas)](https://gitlab.com/alexmozaidze/macroquad-canvas/-/blob/main/LICENSE)
-![Maintenance](https://img.shields.io/maintenance/yes/2023)
 
 # Macroquad Canvas
 
