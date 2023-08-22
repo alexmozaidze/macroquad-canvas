@@ -12,7 +12,7 @@ categories = ["game-development"]
 exclude = ["examples"]
 
 [dependencies]
-macroquad = "0.3"
+macroquad = "0.4"
 
 [[example]]
 name = "basic"

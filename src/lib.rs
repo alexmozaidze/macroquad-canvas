@@ -6,14 +6,12 @@
     clippy::if_then_some_else_none,
     clippy::lossy_float_literal,
     clippy::map_unwrap_or,
-
     missing_docs,
     clippy::doc_link_with_quotes,
     clippy::doc_markdown,
     clippy::missing_errors_doc,
-    clippy::missing_panics_doc,
+    clippy::missing_panics_doc
 )]
-
 #![doc = include_str!("../README.md")]
 
 //---------------------------------------------------------------------
@@ -48,7 +46,6 @@ use std::ops::{Deref, DerefMut};
 ///
 /// There's a [bug](https://github.com/not-fl3/macroquad/issues/171#issuecomment-880601087) that
 /// mirrors render target on the Y axis, as a workaround, the render target gets flipped vertically.
-#[derive(Clone, Copy)]
 pub struct Canvas2D {
     /// The wrapped `Camera2D` necessary for all the calculations
     pub camera: Camera2D,
@@ -96,7 +93,7 @@ impl Canvas2D {
             self.get_size_and_padding(target_width, target_height);
 
         draw_texture_ex(
-            *self.get_texture(),
+            self.get_texture(),
             left_padding,
             top_padding,
             WHITE,

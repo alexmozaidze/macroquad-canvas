@@ -32,7 +32,7 @@ async fn main() {
 
         // Draw 🦀
         draw_texture(
-            ferris,
+            &ferris,
             (WIDTH - ferris.width()) / 2.0,
             (HEIGHT - ferris.height()) / 2.0,
             WHITE,
